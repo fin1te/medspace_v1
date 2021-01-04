@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg"
+    tools:context=".PatientHome">
+
+    <ImageView
+        android:id="@+id/pat_home_art"
+        android:layout_width="125dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/test_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pat_home_welcome_back"
+        app:srcCompat="@drawable/staff_home_art" />
+
+    <TextView
+        android:id="@+id/pat_home_having_issues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/admin_home_having_issues"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pat_contact_us" />
+
+    <TextView
+        android:id="@+id/pat_home_enter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_home_enter_your_aadhaar"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_home_art" />
+
+    <TextView
+        android:id="@+id/pat_home_to_view_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_home_to_view_your_data"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_home_enter_text" />
+
+    <Button
+        android:id="@+id/pat_contact_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_red"
+        android:text="@string/admin_lgpg_contact_us"
+        android:textColor="@color/white"
+        app:backgroundTint="#E00065"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pat_home_welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_home_welcome_back"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pat_home_back_button"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backbtn_white"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pat_aadhaar_text_box"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/dark_input_box"
+        android:ems="10"
+        android:hint="@string/pat_home_hint_aadhaar"
+        android:inputType="number"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_home_to_view_your" />
+
+    <Button
+        android:id="@+id/add_pat1_et_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/dark_button"
+        android:text="@string/pat_home_search_button"
+        app:backgroundTint="#534FA8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_aadhaar_text_box" />
+</androidx.constraintlayout.widget.ConstraintLayout>

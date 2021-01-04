@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg"
+    tools:context=".AddPatient2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="-252dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_pat2_past_illness"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:text="Past illness :"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/add_pat2_hypertension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:text="HyperTension"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_past_illness"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/add_pat2_radioGroup"
+                android:layout_width="224dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_hypertension">
+
+                <RadioButton
+                    android:id="@+id/add_pat2_diabetes_type1"
+                    android:layout_width="224dp"
+                    android:layout_height="50dp"
+                    android:text="Diabetes Mellitus - Type 1"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/add_pat2_diabetes_type2"
+                    android:layout_width="224dp"
+                    android:layout_height="50dp"
+                    android:text="Diabetes Mellitus - Type 2"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/add_pat2_radioGroup2"
+                android:layout_width="224dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/add_pat2_hyperthyroidism"
+                    android:layout_width="224dp"
+                    android:layout_height="50dp"
+                    android:text="Hyperthyroidism"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/add_pat2_hypothyroidism"
+                    android:layout_width="224dp"
+                    android:layout_height="50dp"
+                    android:text="Hypothyroidism"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/edit_pat2_genetic_disorder"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="No Genetic Disorder"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_congenital_anomaly"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:hint="No Cogential Anomaly"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_genetic_disorder"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_allergies"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="No Allergies"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_congenital_anomaly"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_drug_allergies"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="No Drug Allergies"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_allergies"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_significant_family_history"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Diabetes, Bad Vision"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_drug_allergies"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_significant_injury_trauma"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="No Significant Injury / Trauma"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_significant_family_history"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:id="@+id/edit_pat2_significant_diagnosis"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="No Significant Diagnosis"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat2_significant_injury_trauma"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <Button
+
+                android:layout_gravity="center"
+                android:id="@+id/edit_pat2_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/dark_button"
+                android:text="@string/admin_home_next_button"
+                app:backgroundTint="#534FA8"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

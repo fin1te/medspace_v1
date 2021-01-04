@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    tools:context=".PatientLoginPage">
+
+    <Button
+        android:id="@+id/pat_lgpg_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_red"
+        android:text="@string/pat_lgpg_login_btn"
+        android:textColor="@color/white"
+        app:backgroundTint="#E00065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_lgpg_et_password" />
+
+    <Button
+        android:id="@+id/pat_lgpg_backbtn"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backbtn_red"
+        app:backgroundTint="#E00065"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pat_lgpg_hello_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_lgpg_hello_there"
+        android:textColor="#000000"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pat_lgpg_et_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pat_lgpg_having_issues2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_lgpg_having_issues_logging_in"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pat_lgpg_credits_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/info_button"
+        android:contentDescription="@string/pat_credits_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/info_button" />
+
+    <Button
+        android:id="@+id/pat_lgpg_contact_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_red"
+        android:text="@string/pat_lgpg_contact_us"
+        android:textColor="@color/white"
+        app:backgroundTint="#E00065"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pat_lgpg_having_issues2" />
+
+    <TextView
+        android:id="@+id/pat_lgpg_pat_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/pat_lgpg_pat_top_text"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/pat_lgpg_pat_top_text" />
+
+    <EditText
+        android:id="@+id/pat_lgpg_et_username"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/email_pass_bg"
+        android:drawableEnd="@drawable/ic_username_field"
+        android:drawableRight="@drawable/ic_username_field"
+        android:hint="@string/pat_lgpg_username_hint"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#6E6D6D"
+        app:layout_constraintBottom_toTopOf="@+id/pat_lgpg_et_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pat_lgpg_et_password"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:background="@drawable/email_pass_bg"
+        android:drawableEnd="@drawable/ic_password_field"
+        android:drawableRight="@drawable/ic_password_field"
+        android:hint="@string/pat_lgpg_password_hint"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#6E6D6D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

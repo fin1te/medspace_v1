@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg"
+    tools:context=".AddStaff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="-252dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_staff_text"
+                android:layout_width="130dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="131dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginRight="132dp"
+                android:text="Add Staff"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_name"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Name of Staff"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_text"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/add_staff_radiogroup"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="41dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_name">
+
+                <RadioButton
+                    android:id="@+id/add_staff_radio_doctor"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Doctor"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/add_staff_radio_staff"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Staff"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/add_staff_registration_no"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Registration No. ( Doctor )"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_radiogroup"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_department"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Department"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_registration_no"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_joning_date"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Joining Date"
+                android:inputType="date"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_department"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_mobile_no"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_joning_date"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_email_id"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_mobile_no"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_dob"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_email_id"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_staff_address"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_staff_dob"
+                tools:ignore="Autofill,HardcodedText" />
+            <EditText
+                android:id="@+id/add_staff_username"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Username [ Assign ]"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="Autofill,HardcodedText" />
+            <EditText
+                android:id="@+id/add_staff_password"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:hint="Password [ Assign ]"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+            <Button
+                android:id="@+id/add_staff_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/dark_button"
+                android:text="Finish"
+                android:textColor="@color/white"
+                app:backgroundTint="#E91E63"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_pat3_et_follow_up_date"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

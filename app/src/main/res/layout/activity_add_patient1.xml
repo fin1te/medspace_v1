@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg"
+    tools:context=".AddPatient1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="-252dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_pat1_personal_details"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Personal Details"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_pat1_et_aadhaar_no"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Aadhaar Number"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_pat1_et_name"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/add_pat1_et_dob"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.33"
+                    android:text="Gender :"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="40dp"
+                    tools:ignore="HardcodedText"
+                    />
+
+                <RadioButton
+                    android:id="@+id/add_pat1_radio_m"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.33"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:text="Male"
+                    tools:ignore="HardcodedText"
+                    />
+                <RadioButton
+                    android:id="@+id/add_pat1_radio_f"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.33"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="18sp"
+                    android:text="Female"
+                    tools:ignore="HardcodedText,RtlHardcoded"
+                    android:layout_marginEnd="40dp" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/add_pat1_et_address"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/add_pat1_et_pincode"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/add_pat1_et_phone_no"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText,TextFields" />
+            <EditText
+                android:id="@+id/add_pat1_et_email_id"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText"/>
+            <EditText
+                android:id="@+id/add_pat1_et_occupation"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText"/>
+            <EditText
+                android:id="@+id/add_pat1_et_marital_status"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Marital Status"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText"/>
+            <EditText
+                android:id="@+id/add_pat1_et_children"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Children (No.)"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText"/>
+            <EditText
+                android:id="@+id/add_pat1_et_username"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Username [ Assign ]"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText"/>
+            <EditText
+                android:id="@+id/add_pat1_et_password"
+                android:layout_width="336dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_input_box"
+                android:ems="10"
+                android:hint="Password [ Assign ]"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/white"
+                tools:ignore="HardcodedText,TextFields"/>
+            <Button
+                android:id="@+id/add_pat1_et_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dark_button"
+                android:text="@string/admin_home_next_button"
+                android:layout_gravity="center"
+                app:backgroundTint="#534FA8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pat_aadhaar_text_box"
+                 />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

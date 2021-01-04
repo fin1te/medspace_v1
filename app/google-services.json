@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "289598380234",
+    "firebase_url": "https://medspace-v1.firebaseio.com",
+    "project_id": "medspace-v1",
+    "storage_bucket": "medspace-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289598380234:android:a55b946fea90ea5def3c33",
+        "android_client_info": {
+          "package_name": "com.finite.medspace_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289598380234-p8jf0vq01hu306e4dk9349k31i2od2ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9HMJs_40LwQBNyJAdXmjO5sbKedlgEQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289598380234-p8jf0vq01hu306e4dk9349k31i2od2ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
