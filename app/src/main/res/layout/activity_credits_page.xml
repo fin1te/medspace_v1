@@ -11,7 +11,7 @@
         android:id="@+id/cred_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="200dp"
         android:text="App Development Credits"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
@@ -28,37 +28,11 @@
         android:layout_height="123dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="tedet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cred_title"
         app:srcCompat="@drawable/male1"
-        tools:ignore="HardcodedText" />
-
-    <ImageView
-        android:id="@+id/cred_parth"
-        android:layout_width="95dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="tedet"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cred_ladka"
-        app:srcCompat="@drawable/male2"
-        tools:ignore="HardcodedText" />
-
-    <ImageView
-        android:id="@+id/cred_aditya"
-        android:layout_width="95dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="tedet"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cred_parth"
-        app:srcCompat="@drawable/male2"
         tools:ignore="HardcodedText" />
 
     <ImageView
@@ -67,10 +41,10 @@
         android:layout_height="123dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="tedet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cred_aditya"
+        app:layout_constraintTop_toBottomOf="@+id/cred_ladka"
         app:srcCompat="@drawable/female1"
         tools:ignore="HardcodedText" />
 
@@ -80,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:text="Rishabh Mehta"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
@@ -91,50 +65,18 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/parth_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="110dp"
-        android:text="Parth Pitrubhakta"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/cred_parth"
-        app:layout_constraintTop_toBottomOf="@+id/finite_desc"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/aditya_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="110dp"
-        android:text="Aditya Madhavi"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/cred_aditya"
-        app:layout_constraintTop_toBottomOf="@+id/parth_desc"
-        tools:ignore="HardcodedText" />
-
-    <TextView
         android:id="@+id/kore_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="150dp"
         android:text="Vandana Kumari"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cred_ladki"
-        app:layout_constraintTop_toBottomOf="@+id/aditya_desc"
+        app:layout_constraintTop_toBottomOf="@+id/finite_desc"
         tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
