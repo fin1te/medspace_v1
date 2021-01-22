@@ -1,5 +1,5 @@
 # 🔰 Medspace_v1 🔰
-##My First Android app, Medspace - Medical record maintenance app's First public build
+## My First Android app, Medspace - Medical record maintenance app's First public build
 ---
 This app MedSpace is what i made for my 3rd Semester's project, and i wish 
 to continue this project further as a personal hobby, while i learn more 
@@ -16,4 +16,4 @@ This project is by no means under any Github Licenses or Open Sources
 (Not yet atleast). If you want to contribute to this project, get in touch
 with me with your idea by creating an issue in this Repository.
 ---
-###Thanks and have a nice day! ^_^ ❤
+### Thanks and have a nice day! ^_^ ❤
