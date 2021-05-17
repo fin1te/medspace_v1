@@ -1,5 +1,10 @@
 # 🔰 Medspace_v1 🔰
-## My First Android app, Medspace - Medical record maintenance app's First public build
+
+## My first Android app, Medspace
+
+![GIF](https://media.discordapp.net/attachments/735859351998169088/843991584755548210/ezgif.com-gif-maker.gif?width=304&height=675)&nbsp;
+![GIF](https://media.discordapp.net/attachments/735859351998169088/843994791125188618/M2.gif?width=304&height=675)&nbsp;
+
 ---
 <img align="center" height='180px' alt="PNG" src="https://github.com/fin1te/medspace_v1/blob/master/app/src/main/res/drawable/applogo_01.png" />
 
