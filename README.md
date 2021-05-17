@@ -23,8 +23,8 @@ More people may join this project in future if i seem it necessary, as we
 intend to make further versions of this app as i learn more about data 
 structures and algorithm, as well as Android Studio. 
 ---
-This project is by no means under any Github Licenses or Open Sources
-(Not yet atleast). If you want to contribute to this project, get in touch
-with me with your idea by creating an issue in this Repository.
----
+[//]: # "This project is by no means under any Github Licenses or Open Sources"
+[//]: # "(Not yet atleast). If you want to contribute to this project, get in touch"
+[//]: # "with me with your idea by creating an issue in this Repository."
+
 ### Thanks and have a nice day! ^_^ ❤
