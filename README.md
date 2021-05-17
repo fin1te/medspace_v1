@@ -1,10 +1,13 @@
 # 🔰 Medspace_v1 🔰
 
 ## My first Android app, Medspace
+<p float="middle">
+  <img  height='556px' width='250px' alt="GIFF" src="https://media.discordapp.net/attachments/735859351998169088/843991584755548210/ezgif.com-gif-maker.gif?width=304&height=675" />
+<img  height='556px' width='250px' alt="GIFF" src="https://media.discordapp.net/attachments/735859351998169088/843994791125188618/M2.gif?width=304&height=675" />
+<img  height='556px' width='250px' alt="GIFF" src="https://media.discordapp.net/attachments/735859351998169088/843997487735373834/ezgif.com-gif-maker.gif?width=304&height=675" />
+</p>
 
-![GIF](https://media.discordapp.net/attachments/735859351998169088/843991584755548210/ezgif.com-gif-maker.gif?width=304&height=675)&nbsp;
-![GIF](https://media.discordapp.net/attachments/735859351998169088/843994791125188618/M2.gif?width=304&height=675)&nbsp;
-![GIF](https://media.discordapp.net/attachments/735859351998169088/843997487735373834/ezgif.com-gif-maker.gif?width=304&height=675)&nbsp;
+
 
 ---
 <img align="center" height='180px' alt="PNG" src="https://github.com/fin1te/medspace_v1/blob/master/app/src/main/res/drawable/applogo_01.png" />
